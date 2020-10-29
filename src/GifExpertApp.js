@@ -8,13 +8,13 @@ const GifExpertApp = () => {
 
   // const handleAdd = () => {
   //   // setCategories([...categories, 'Daredevil']);
-  //   setCategories(category => [...categories, 'Batman']);
+  //   setCategories(categories => [...categories, 'Batman']);
   // }
 
   return (
     <>
       <h2>GifExpertApp</h2>
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
       <hr/>
 
       <ol>
