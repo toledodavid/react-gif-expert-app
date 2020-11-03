@@ -4,7 +4,12 @@ exports[`Tests for <GifGridItem/> component It should render <GifGridItem/> corr
 <div
   className="card animate__animated animate__fadeIn"
 >
-  <img />
-  <p />
+  <img
+    alt="Test title"
+    src="https://www.google.com"
+  />
+  <p>
+    Test title
+  </p>
 </div>
 `;
