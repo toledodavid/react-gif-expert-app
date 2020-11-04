@@ -24,7 +24,7 @@ const AddCategory = ({setCategories}) => {
       <p>{inputValue}</p>
       <input
         type="text"
-        placeholder={inputValue}
+        value={inputValue}
         onChange={handleInputChange}
       />
     </form>

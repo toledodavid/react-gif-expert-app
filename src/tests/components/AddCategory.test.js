@@ -30,4 +30,18 @@ describe('Tests for <AddCategory /> component', () => {
     expect(setCategories).not.toHaveBeenCalled();
   });
 
+  test('It should call setCategories method and clear the input value', () => {
+    const value = 'Batman';
+    const input = wrapper.find('input');
+    input.simulate('change', {target: {value}});
+
+    wrapper.find('form').simulate('submit', { preventDefault(){} });
+
+    expect(setCategories).toHaveBeenCalled();
+    expect(setCategories).toHaveBeenCalledTimes(1);
+    expect(setCategories).toHaveBeenCalledWith(expect.any(Function));
+
+    expect(input.prop('value')).toBe('');
+  });
+
 });

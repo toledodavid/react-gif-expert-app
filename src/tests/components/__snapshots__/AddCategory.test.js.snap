@@ -7,8 +7,8 @@ exports[`Tests for <AddCategory /> component It should render correctly 1`] = `
   <p />
   <input
     onChange={[Function]}
-    placeholder=""
     type="text"
+    value=""
   />
 </form>
 `;
