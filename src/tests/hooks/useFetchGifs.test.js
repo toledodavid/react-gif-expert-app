@@ -16,7 +16,7 @@ describe('Tests in useFetchGifs hook', () => {
     expect(loading).toBe(true);
   });
 
-  test('It should return images array and loading in false', async() => {
+  test('It should return images array and loading property in false', async() => {
 
     const { result, waitForNextUpdate } = renderHook(() => useFetchGifs('Batman'));
     await waitForNextUpdate();
